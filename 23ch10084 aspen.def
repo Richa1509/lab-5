@@ -1,0 +1,10 @@
+INPUT: 23ch10084 aspen.inm
+MODNAME: apmain
+RUNID: 23ch10084 aspen
+NEW_RUNID: 23ch10084 aspen
+OLD_RUNID: 23ch10084 aspen
+PDF: 23ch10084 aspen.appdf
+USERNAME: CAPE
+XMOD: C:\Program Files\AspenTech\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _4038lof.ads

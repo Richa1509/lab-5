@@ -1,0 +1,391 @@
+
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + +                                                                         + +
+ + +                      ASPEN PLUS CALCULATION HISTORY                     + +
+ + +                                                                         + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+ ASPEN PLUS IS A TRADEMARK OF           HOTLINE:
+ ASPEN TECHNOLOGY, INC.                 U.S.A. 888/996-7100
+ 781/221-6400                           EUROPE (44) 1189-226555
+
+ PLATFORM: WIN-X64                                       FEBRUARY 13, 2026   
+ VERSION: 40.0   Build 359                               FRIDAY      
+ INSTALLATION:                                           9:43:35 A.M.        
+
+ THIS COPY OF ASPEN PLUS LICENSED TO INDIAN INSTITUTE OF TECH        
+
+
+      ASPEN PLUS (R) IS A PROPRIETARY PRODUCT OF ASPEN TECHNOLOGY, INC.
+      (ASPENTECH), AND MAY BE USED ONLY UNDER AGREEMENT WITH ASPENTECH.
+      RESTRICTED RIGHTS LEGEND:  USE, REPRODUCTION, OR DISCLOSURE BY THE
+      U.S. GOVERNMENT IS SUBJECT TO RESTRICTIONS SET FORTH IN 
+      (i) FAR 52.227-14, Alt. III, (ii) FAR 52.227-19, (iii) DFARS 
+      252.227-7013(c)(1)(ii), or (iv) THE ACCOMPANYING LICENSE AGREEMENT,
+      AS APPLICABLE. FOR PURPOSES OF THE FAR, THIS SOFTWARE SHALL BE DEEMED
+      TO BE "UNPUBLISHED" AND LICENSED WITH DISCLOSURE PROHIBITIONS.
+      CONTRACTOR/SUBCONTRACTOR: ASPEN TECHNOLOGY, INC. 20 CROSBY DRIVE,
+      BEDFORD, MA 01730.
+ *** INPUT SUMMARY ***
+
+ >>CURRENT RUN
+
+   ORIGINAL RUN                           FEBRUARY 13, 2026   
+   9:43:35 A.M.                           FRIDAY      
+   INPUT FILE: _4038lof.inm
+   RUN ID : _4038lof
+          1
+          2
+          3    TGS
+          4
+          5    DATABANKS 'APV140 POLYMER' / 'APV140 SEGMENT' /  &
+          6            'APV140 INITIATO' / 'APV140 PURE40' / NOASPENPCD
+          7
+          8    PROP-SOURCES 'APV140 POLYMER' / 'APV140 SEGMENT' /  &
+          9            'APV140 INITIATO' / 'APV140 PURE40'
+         10
+         11    SIM-OPTIONS MASS-BAL-CHE=YES ADSCNVG=YES
+         12
+         13    COMPONENTS
+         14        BENZENE C6H6 /
+         15        TOLUENE C7H8
+         16
+         17    PROPERTIES POLYNRTL
+         18
+         19    PROP-DATA NRTL-1
+         20        IN-UNITS ENG SHORT-LENGTH=in
+         21        PROP-LIST NRTL
+         22        BPVAL BENZENE TOLUENE -2.719200000 1950.115500 .3000000000  &
+         23            0.0 0.0 0.0 104.0000000 231.3500000
+         24        BPVAL TOLUENE BENZENE 2.067100000 -1496.400300 .3000000000  &
+         25            0.0 0.0 0.0 104.0000000 231.3500000
+         26
+         27    IN-UNITS ENG SHORT-LENGTH=in
+         28
+         29    PROP-TABLE $MMTXY FLASHCURVE
+         30        IN-UNITS ENG SHORT-LENGTH=in
+         31        PROPERTIES POLYNRTL FREE-WATER=STEAM-TA SOLU-WATER=3  &
+         32            TRUE-COMPS=YES
+         33        MOLE-FLOW BENZENE 1 /  TOLUENE  1
+         34        STATE VFRAC=0.0
+         35        ANALYSIS ANAL-TYPE=TXY
+         36        VARY PRES
+         37        RANGE LIST=14.69594878
+         38        VARY MOLEFRAC COMP=BENZENE
+         39        RANGE VARVALUE=RANGE LOWER=0.0 UPPER=1.0 NPOINT=50
+         40        PARAM NPHASE=3
+         41    ;
+         42    ;
+         43    ;
+         44    ;
+         45    ;
+ *** INPUT TRANSLATOR MESSAGES ***
+
+  *** THIS RUN USES THE PROPERTIES ENTERPRISE DATABASE ***
+      SQLLOCALDB.APESV140 : (DATAVERSION - 40.0.0.13)                         
+      SQLLOCALDB.APV140 : (DATAVERSION - 40.0.0.13)                           
+      SQLLOCALDB.FACTV140 : (DATAVERSION - 40.0.0.12)                         
+      SQLLOCALDB.NISTV140 : (DATAVERSION - 40.0.0.12)                         
+
+ PDF updated                                                                      TIME =      1.14
+
+ *** CALCULATION TRACE ***
+
+
+
+      BEGIN CALCULATIONS FOR PROP-TABLE $MMTXY                                    TIME =      0.02
+      KODE = 3  NTRIAL =   4  T = 383.8293  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  0.00000    
+      KODE = 3  NTRIAL =   6  T = 382.9100  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  159.935    
+      KODE = 3  NTRIAL =   6  T = 382.0060  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  160.859    
+      KODE = 3  NTRIAL =   6  T = 381.1174  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  161.817    
+      KODE = 3  NTRIAL =   6  T = 380.2444  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  162.804    
+      KODE = 3  NTRIAL =   6  T = 379.3869  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  163.815    
+      KODE = 3  NTRIAL =   6  T = 378.5449  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  164.848    
+      KODE = 3  NTRIAL =   6  T = 377.7184  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  165.897    
+      KODE = 3  NTRIAL =   6  T = 376.9073  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  166.962    
+      KODE = 3  NTRIAL =   6  T = 376.1113  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  168.038    
+      KODE = 3  NTRIAL =   6  T = 375.3303  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  169.123    
+      KODE = 3  NTRIAL =   6  T = 374.5640  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  170.216    
+      KODE = 3  NTRIAL =   6  T = 373.8123  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  171.315    
+      KODE = 3  NTRIAL =   6  T = 373.0749  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  172.417    
+      KODE = 3  NTRIAL =   6  T = 372.3515  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  173.522    
+      KODE = 3  NTRIAL =   6  T = 371.6419  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  174.628    
+      KODE = 3  NTRIAL =   6  T = 370.9457  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  175.734    
+      KODE = 3  NTRIAL =   6  T = 370.2626  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  176.839    
+      KODE = 3  NTRIAL =   6  T = 369.5924  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  177.942    
+      KODE = 3  NTRIAL =   6  T = 368.9348  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  179.044    
+      KODE = 3  NTRIAL =   6  T = 368.2894  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  180.142    
+      KODE = 3  NTRIAL =   6  T = 367.6559  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  181.237    
+      KODE = 3  NTRIAL =   6  T = 367.0342  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  182.328    
+      KODE = 3  NTRIAL =   6  T = 366.4237  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  183.415    
+      KODE = 3  NTRIAL =   6  T = 365.8244  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  184.498    
+      KODE = 3  NTRIAL =   6  T = 365.2358  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  185.575    
+      KODE = 3  NTRIAL =   6  T = 364.6577  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  186.648    
+      KODE = 3  NTRIAL =   6  T = 364.0899  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  187.715    
+      KODE = 3  NTRIAL =   6  T = 363.5319  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  188.777    
+      KODE = 3  NTRIAL =   6  T = 362.9837  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  189.833    
+      KODE = 3  NTRIAL =   6  T = 362.4448  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  190.883    
+      KODE = 3  NTRIAL =   6  T = 361.9151  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  191.928    
+      KODE = 3  NTRIAL =   6  T = 361.3942  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  192.966    
+      KODE = 3  NTRIAL =   6  T = 360.8820  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  193.998    
+      KODE = 3  NTRIAL =   6  T = 360.3782  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  195.024    
+      KODE = 3  NTRIAL =   6  T = 359.8825  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  196.043    
+      KODE = 3  NTRIAL =   6  T = 359.3948  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  197.056    
+      KODE = 3  NTRIAL =   6  T = 358.9148  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  198.062    
+      KODE = 3  NTRIAL =   6  T = 358.4422  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  199.062    
+      KODE = 3  NTRIAL =   6  T = 357.9768  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  200.054    
+      KODE = 3  NTRIAL =   6  T = 357.5186  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  201.039    
+      KODE = 3  NTRIAL =   6  T = 357.0671  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  202.017    
+      KODE = 3  NTRIAL =   6  T = 356.6223  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  202.987    
+      KODE = 3  NTRIAL =   6  T = 356.1838  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  203.950    
+      KODE = 3  NTRIAL =   6  T = 355.7517  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  204.905    
+      KODE = 3  NTRIAL =   6  T = 355.3255  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  205.851    
+      KODE = 3  NTRIAL =   5  T = 354.9052  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  206.790    
+      KODE = 3  NTRIAL =   5  T = 354.4905  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  207.719    
+      KODE = 3  NTRIAL =   5  T = 354.0813  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  208.640    
+      KODE = 3  NTRIAL =   5  T = 353.6774  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  209.552    
+      KODE = 3  NTRIAL =   4  T = 353.2785  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  210.454    
+
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + +                                                                         + +
+ + +                      ASPEN PLUS CALCULATION HISTORY                     + +
+ + +                                                                         + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+ ASPEN PLUS IS A TRADEMARK OF           HOTLINE:
+ ASPEN TECHNOLOGY, INC.                 U.S.A. 888/996-7100
+ 781/221-6400                           EUROPE (44) 1189-226555
+
+ PLATFORM: WIN-X64                                       FEBRUARY 13, 2026   
+ VERSION: 40.0   Build 359                               FRIDAY      
+ INSTALLATION:                                           10:15:54 A.M.       
+
+ THIS COPY OF ASPEN PLUS LICENSED TO INDIAN INSTITUTE OF TECH        
+
+
+      ASPEN PLUS (R) IS A PROPRIETARY PRODUCT OF ASPEN TECHNOLOGY, INC.
+      (ASPENTECH), AND MAY BE USED ONLY UNDER AGREEMENT WITH ASPENTECH.
+      RESTRICTED RIGHTS LEGEND:  USE, REPRODUCTION, OR DISCLOSURE BY THE
+      U.S. GOVERNMENT IS SUBJECT TO RESTRICTIONS SET FORTH IN 
+      (i) FAR 52.227-14, Alt. III, (ii) FAR 52.227-19, (iii) DFARS 
+      252.227-7013(c)(1)(ii), or (iv) THE ACCOMPANYING LICENSE AGREEMENT,
+      AS APPLICABLE. FOR PURPOSES OF THE FAR, THIS SOFTWARE SHALL BE DEEMED
+      TO BE "UNPUBLISHED" AND LICENSED WITH DISCLOSURE PROHIBITIONS.
+      CONTRACTOR/SUBCONTRACTOR: ASPEN TECHNOLOGY, INC. 20 CROSBY DRIVE,
+      BEDFORD, MA 01730.
+ *** INPUT SUMMARY ***
+
+ >>CURRENT RUN
+
+   ORIGINAL RUN                           FEBRUARY 13, 2026   
+   10:15:54 A.M.                          FRIDAY      
+   INPUT FILE: _4038lof.inm
+   RUN ID : _4038lof
+          1    ;
+          2    ;Input file created by Aspen Plus Rel. 40.0 at 10:15:53 Fri Feb 13, 2026
+          3    ;Directory C:\Users\CAPE\Documents\AspenTech\Aspen Plus V14.0  Runid _UNNAMED
+          4    ;
+          5
+          6
+          7    DYNAMICS
+          8        DYNAMICS RESULTS=ON
+          9
+         10    IN-UNITS ENG SHORT-LENGTH=in
+         11
+         12    DEF-STREAMS CONVEN ALL
+         13
+         14    SIM-OPTIONS MASS-BAL-CHE=YES ADSCNVG=YES
+         15
+         16    MODEL-OPTION
+         17
+         18    DESCRIPTION "
+         19        Polymers Batch Process with English Units :
+         20        F, psi, lb/hr, lbmol/hr, Btu/hr, cuft/hr.
+         21
+         22        Property Method: None
+         23
+         24        Flow basis for input: Mass
+         25
+         26        Stream report composition: Mass flow
+         27        "
+         28
+         29    DATABANKS 'APV140 POLYMER' / 'APV140 SEGMENT' /  &
+         30            'APV140 INITIATO' / 'APV140 PURE40' / NOASPENPCD
+         31
+         32    PROP-SOURCES 'APV140 POLYMER' / 'APV140 SEGMENT' /  &
+         33            'APV140 INITIATO' / 'APV140 PURE40'
+         34
+         35    COMPONENTS
+         36        BENZENE C6H6 /
+         37        TOLUENE C7H8
+         38
+         39    SOLVE
+         40        PARAM PROCESS=CONTINUOUS
+         41        RUN-MODE MODE=SIM
+         42
+         43    FLOWSHEET
+         44        BLOCK B2 IN=FEED OUT=DSTL BPR
+         45
+         46    PROPERTIES POLYNRTL
+         47
+         48    PROP-DATA NRTL-1
+         49        IN-UNITS ENG SHORT-LENGTH=in
+         50        PROP-LIST NRTL
+         51        BPVAL BENZENE TOLUENE -2.719200000 1950.115500 .3000000000  &
+         52            0.0 0.0 0.0 104.0000000 231.3500000
+         53        BPVAL TOLUENE BENZENE 2.067100000 -1496.400300 .3000000000  &
+         54            0.0 0.0 0.0 104.0000000 231.3500000
+         55
+         56    STREAM FEED
+         57        SUBSTREAM MIXED TEMP=92.08 <C> PRES=1. <atm>
+         58        MASS-FLOW BENZENE 0.5 / TOLUENE 0.5
+         59
+         60    BLOCK B2 DSTWU
+         61        PARAM LIGHTKEY=BENZENE RECOVL=0.98 HEAVYKEY=TOLUENE  &
+         62            RECOVH=0.1 PTOP=1. <atm> PBOT=1. <atm> RR=3.
+         63
+         64    EO-CONV-OPTI
+         65
+         66    STREAM-REPOR MOLEFLOW MASSFLOW
+         67
+         68    PROPERTY-REP PCES
+         69
+         70    PROP-TABLE BINRY-1 FLASHCURVE
+         71        IN-UNITS ENG SHORT-LENGTH=in
+         72        PROPERTIES POLYNRTL FREE-WATER=STEAM-TA SOLU-WATER=3  &
+         73            TRUE-COMPS=YES
+         74        MOLE-FLOW BENZENE 1 /  TOLUENE  1
+         75        STATE VFRAC=0.0
+         76        ANALYSIS ANAL-TYPE=TXY
+         77        VARY PRES
+         78        RANGE LIST=14.69594878
+         79        VARY MOLEFRAC COMP=BENZENE
+         80        RANGE VARVALUE=RANGE LOWER=0.0 UPPER=1.0 NPOINT=50
+         81        PARAM NPHASE=3
+         82    ;
+         83    ;
+         84    ;
+         85    ;
+         86    ;
+ *** INPUT TRANSLATOR MESSAGES ***
+
+  *** THIS RUN USES THE PROPERTIES ENTERPRISE DATABASE ***
+      SQLLOCALDB.APESV140 : (DATAVERSION - 40.0.0.13)                         
+      SQLLOCALDB.APV140 : (DATAVERSION - 40.0.0.13)                           
+      SQLLOCALDB.FACTV140 : (DATAVERSION - 40.0.0.12)                         
+      SQLLOCALDB.NISTV140 : (DATAVERSION - 40.0.0.12)                         
+ 
+ 
+
+ PDF updated                                                                      TIME =      0.93
+
+ *** CALCULATION TRACE ***
+
+
+ *** FLOWSHEET ANALYSIS MESSAGES ***
+
+ FLOWSHEET CONNECTIVITY BY STREAMS       
+
+   STREAM     SOURCE     DEST           STREAM     SOURCE     DEST
+   FEED       ----       B2             DSTL       B2         ----    
+   BPR        B2         ----                                         
+
+ FLOWSHEET CONNECTIVITY BY BLOCKS        
+
+   BLOCK        INLETS                         OUTLETS
+   B2           FEED                           DSTL BPR                    
+
+      COMPUTATION ORDER FOR THE FLOWSHEET IS:
+      B2 
+
+Calculations begin                                                              time      0.24
+
+
+ SIMULATION CALCULATIONS BEGIN                                                    TIME =      0.24
+
+      ENTHALPY CALCULATION FOR INLET STREAM FEED OF BLOCK B2                      TIME =      0.24
+      KODE = 2  NTRIAL =   2  T = 365.2300  P =  101325.      V = 0.196519      Q =  0.00000    
+
+      UOS BLOCK B2       MODEL: DSTWU                                             TIME =      0.24
+       TD =   354.9    ,  TB =   382.7    ,  RMIN =   1.062    ,  RACT =   3.000    
+       MIN STAGES =   7.116    , ACT STAGES =   9.317    
+       ACT. # OF RECT. STAGES =   3.627    
+       REBOILER DUTY =   98.62    
+       FEED QUALITY =   0.1965    
+
+ Report Writer entered                                                            Time =      0.31
+      STREAM BPR WILL BE FLASHED FOR PROPERTY CALCULATIONS.
+      KODE = 3  NTRIAL =   4  T = 382.6579  P =  101325.      V =  0.00000      Q =-2.684888E-10
+      STREAM DSTL WILL BE FLASHED FOR PROPERTY CALCULATIONS.
+      KODE = 3  NTRIAL =   4  T = 354.8972  P =  101325.      V =  0.00000      Q =-2.169104E-10
+
+      BEGIN CALCULATIONS FOR PROP-TABLE BINRY-1                                   TIME =      0.34
+      KODE = 3  NTRIAL =   4  T = 383.8293  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  0.00000    
+      KODE = 3  NTRIAL =   6  T = 382.9100  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  159.935    
+      KODE = 3  NTRIAL =   6  T = 382.0060  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  160.859    
+      KODE = 3  NTRIAL =   6  T = 381.1174  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  161.817    
+      KODE = 3  NTRIAL =   6  T = 380.2444  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  162.804    
+      KODE = 3  NTRIAL =   6  T = 379.3869  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  163.815    
+      KODE = 3  NTRIAL =   6  T = 378.5449  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  164.848    
+      KODE = 3  NTRIAL =   6  T = 377.7184  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  165.897    
+      KODE = 3  NTRIAL =   6  T = 376.9073  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  166.962    
+      KODE = 3  NTRIAL =   6  T = 376.1113  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  168.038    
+      KODE = 3  NTRIAL =   6  T = 375.3303  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  169.123    
+      KODE = 3  NTRIAL =   6  T = 374.5640  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  170.216    
+      KODE = 3  NTRIAL =   6  T = 373.8123  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  171.315    
+      KODE = 3  NTRIAL =   6  T = 373.0749  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  172.417    
+      KODE = 3  NTRIAL =   6  T = 372.3515  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  173.522    
+      KODE = 3  NTRIAL =   6  T = 371.6419  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  174.628    
+      KODE = 3  NTRIAL =   6  T = 370.9457  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  175.734    
+      KODE = 3  NTRIAL =   6  T = 370.2626  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  176.839    
+      KODE = 3  NTRIAL =   6  T = 369.5924  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  177.942    
+      KODE = 3  NTRIAL =   6  T = 368.9348  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  179.044    
+      KODE = 3  NTRIAL =   6  T = 368.2894  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  180.142    
+      KODE = 3  NTRIAL =   6  T = 367.6559  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  181.237    
+      KODE = 3  NTRIAL =   6  T = 367.0342  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  182.328    
+      KODE = 3  NTRIAL =   6  T = 366.4237  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  183.415    
+      KODE = 3  NTRIAL =   6  T = 365.8244  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  184.498    
+      KODE = 3  NTRIAL =   6  T = 365.2358  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  185.575    
+      KODE = 3  NTRIAL =   6  T = 364.6577  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  186.648    
+      KODE = 3  NTRIAL =   6  T = 364.0899  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  187.715    
+      KODE = 3  NTRIAL =   6  T = 363.5319  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  188.777    
+      KODE = 3  NTRIAL =   6  T = 362.9837  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  189.833    
+      KODE = 3  NTRIAL =   6  T = 362.4448  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  190.883    
+      KODE = 3  NTRIAL =   6  T = 361.9151  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  191.928    
+      KODE = 3  NTRIAL =   6  T = 361.3942  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  192.966    
+      KODE = 3  NTRIAL =   6  T = 360.8820  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  193.998    
+      KODE = 3  NTRIAL =   6  T = 360.3782  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  195.024    
+      KODE = 3  NTRIAL =   6  T = 359.8825  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  196.043    
+      KODE = 3  NTRIAL =   6  T = 359.3948  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  197.056    
+      KODE = 3  NTRIAL =   6  T = 358.9148  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  198.062    
+      KODE = 3  NTRIAL =   6  T = 358.4422  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  199.062    
+      KODE = 3  NTRIAL =   6  T = 357.9768  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  200.054    
+      KODE = 3  NTRIAL =   6  T = 357.5186  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  201.039    
+      KODE = 3  NTRIAL =   6  T = 357.0671  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  202.017    
+      KODE = 3  NTRIAL =   6  T = 356.6223  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  202.987    
+      KODE = 3  NTRIAL =   6  T = 356.1838  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  203.950    
+      KODE = 3  NTRIAL =   6  T = 355.7517  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  204.905    
+      KODE = 3  NTRIAL =   6  T = 355.3255  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  205.851    
+      KODE = 3  NTRIAL =   5  T = 354.9052  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  206.790    
+      KODE = 3  NTRIAL =   5  T = 354.4905  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  207.719    
+      KODE = 3  NTRIAL =   5  T = 354.0813  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  208.640    
+      KODE = 3  NTRIAL =   5  T = 353.6774  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  209.552    
+      KODE = 3  NTRIAL =   4  T = 353.2785  P =  101325.      V =  0.00000      BETA =  1.00000      Q =  210.454    
+
+ Results generated                                                                Time =      0.35
+
+RUN SAVED
+
+
+
+ NO ERRORS OR WARNINGS GENERATED
+
+RUN SAVED
+
+
+
+ NO ERRORS OR WARNINGS GENERATED
